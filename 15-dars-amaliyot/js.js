@@ -33,7 +33,7 @@ if (seriesDB.count <= 5) {
     console.log("Kam serial ko’ripsiz")
 } else if (seriesDB.count > 5 & seriesDB.count <= 10) {
     console.log("Siz classik tamoshabin ekansiz")
-} else {
+} else if (seriesDB.count > 10) {
     console.log("Siz serialchi zvezda ekansiz")
 }
 console.log(numberOfSeries, seriesDB);
