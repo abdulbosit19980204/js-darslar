@@ -18,6 +18,17 @@ const text1 = "lPariatur minim id aliqua nisi do aute esse labore deserunt velit
 // }
 
 //slice bolaklarga boladi
-thirdText = text.slice(30, (45 * 2))
-console.log(thirdText)
-    // console.log(text1.slice())
+// thirdText = text.slice(30, (45 * 2))
+// console.log(thirdText)
+// console.log(text1.slice(-8, -1)) // we can use minus or plus with slice
+// console.log(text.substring(11, 55)) // we can't use minus (-) value with subsitring
+// console.log(text.substr(11, 55)) // the second value of substr is length of returned value
+
+let num = 8.22,
+    tnum = '122 abdulbosit'
+num = (1125 * 22.001111) + 8855
+console.log(Math.round(num))
+console.log(parseInt(tnum)) // pars qilganda faqatgini boshidagi raqam olinadi pars o'zi kelgan malumotni bu yerda int tipiga otkazib beradi
+num = num + "px"
+console.log(num)
+console.log(parseFloat(num))
