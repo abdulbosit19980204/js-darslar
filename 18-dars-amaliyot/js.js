@@ -51,7 +51,7 @@ function detectLevelSeries() {
 }
 detectLevelSeries()
 
-// seriesDB.private = true
+seriesDB.private = true
 
 function showDb() {
     if (!seriesDB.private) {
@@ -69,7 +69,7 @@ function writeGenres() {
         if (g != "" || g != null) {
             seriesDB.genres[i + 1 + " - janr"] = g
         }
-        console.log(p)
+        // console.log(p)
     }
 }
 
