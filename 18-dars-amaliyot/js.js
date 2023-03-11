@@ -6,7 +6,7 @@ const seriesDB = {
     series: {},
     actors: {},
     genres: [],
-    privat: false,
+    private: false,
 }
 
 function startApp() {
@@ -47,25 +47,19 @@ function detectLevelSeries() {
     } else if (seriesDB.count > 10) {
         console.log("Siz serialchi zvezda ekansiz")
     }
-    console.log(numberOfSeries, seriesDB);
+    // console.log(numberOfSeries, seriesDB);
 }
 detectLevelSeries()
 
-let isPrivate = prompt("Qanday personsiz")
+// seriesDB.private = true
 
-function showDb(isPrivate) {
-    if (isPrivate == "private") {
-        console.log("VIP")
-        return true
-    } else if (isPrivate != "") {
-        console.log("Public person")
-        return false
-    } else {
-        console.log("Error")
+function showDb() {
+    if (!seriesDB.private) {
+        console.log(seriesDB)
     }
 }
 
-showDb(isPrivate)
+showDb()
 
 
 function writeGenres() {
