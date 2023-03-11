@@ -71,9 +71,11 @@ showDb(isPrivate)
 function writeGenres() {
     for (i = 0; i < numberOfSeries; i++) {
         let g = prompt(i + 1 + " - Yaxshi korgan janiringiz")
+        let p = prompt(`${i+1} - yaxshi korgan janringiz`, i)
         if (g != "" || g != null) {
             seriesDB.genres[i + 1 + " - janr"] = g
         }
+        console.log(p)
     }
 }
 
