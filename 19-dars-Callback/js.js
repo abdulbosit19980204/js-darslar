@@ -1,10 +1,15 @@
-function first() {
-    console.log("1")
+function first(cb) {
+    setTimeout(() => {
+        console.log(1);
+        cb();
+    }, 1000);
+
 }
 
 function second() {
-    console.log("2")
+    console.log("2");
 }
+first(second)
 
 function done() {
     console.log("that's great")
