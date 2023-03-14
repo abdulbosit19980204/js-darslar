@@ -18,5 +18,23 @@ a.shift()
 console.log("<shift>", a, "</shift>")
 
 // unshift boshiga element qoshadi
-a.unshift("")
+a.unshift("0")
 console.log("<unshift>", a, "</unshift>")
+
+// for of  - massivlarni iteratsiya qilish uchun ishlatiladi
+
+for (let value of a) {
+    console.log("of val", value)
+}
+
+// length - barcha elementlarni sanab chiqmaydi. Oxirgi element index ga 1 ni qoshib javobni chiqaradi lekin yana bir muhim xato bu orada bo'sh element qoldirib n - elementga qiymat qoshish
+// a[99] = 100
+// a[31] = 31
+console.log("a length = ", a.length)
+console.log(a)
+
+// forEach - funksiya claback qaytaradi bu uchta parametr qabul qiladi. Bu forEach kop foydalaniladi
+
+a.forEach(function(item, index, arr) {
+    console.log(`${index}: ${item} into arr ${a}}`)
+})
