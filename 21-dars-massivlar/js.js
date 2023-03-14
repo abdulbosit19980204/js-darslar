@@ -38,3 +38,26 @@ console.log(a)
 a.forEach(function(item, index, arr) {
     console.log(`${index}: ${item} into arr ${a}}`)
 })
+
+//Biror belgi bilan massivga o'tkazish yani ajratib olish uchun split methodida foydalaniladi
+
+let kino = prompt("What is your fovorute movies", ""),
+    kinoArr = kino.split(" ")
+console.log("<kino>", kino, "</kino>")
+console.log("<kinoArr>", kinoArr, "</kinoArr>")
+
+// join esa massivlarni qoshib beradi
+let kinojoin = kinoArr.join(" /")
+console.log("<kinojoin>", kinojoin, "</kinojoin>")
+
+//sort sartirofka qilib beradi
+kinoArr.sort()
+console.log(kinoArr)
+
+let numSort = [77, 11, 2, 8, 99, 3, 4, 5, 7]
+numSort.sort(compareFn)
+console.log(numSort)
+
+function compareFn(a, b) {
+    return a - b;
+}
