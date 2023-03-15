@@ -28,3 +28,59 @@ shu qiymat qaytariladi chunki obyektlarda havola yani reference bolgani uchun x 
 asosiy joydagi qiymat ozgaradi va butun obyekt boyicha tasir qilib qoladi
 bu ni boshqa yollar bilan o'zgartirish mumkin
 */
+
+/* quydagi funkisya yordamizda obyekt boyicha iteratsiya qilamzi va 
+obyektimizni elementlarini boshqa ozgaruvchiga yuklab qoyamiz */
+
+function nusxaObject(obj) {
+    let objNusxa = {}
+
+    for (let key in obj) {
+        objNusxa[key] = obj[key]
+    }
+    return objNusxa
+}
+
+const newNum = {
+    x: 25,
+    y: 42,
+    newObj: {
+        color: "yellow",
+        money: 5000,
+        made: "china",
+
+    }
+}
+const newNewNum = nusxaObject(newNum)
+newNum.x = 75;
+newNum.newObj.made = "Uzbekistan"
+console.log("newNewNum = ", newNewNum);
+console.log("newNum = ", newNum);
+
+// object asign methodi 
+
+const nobj = {
+    a: 1,
+    b: 2,
+    c: {
+        x: "x+5",
+        y: "y+5"
+    }
+}
+
+const newNobj = Object.assign({}, nobj)
+console.log(newNobj)
+
+
+// Array larni methodlari 
+
+const arr = ['1', '5', '6']
+const arr2 = ['2', '3', '4']
+
+const sliceNumber = arr.slice()
+sliceNumber[2] = 7
+console.log(arr, "\n", sliceNumber);
+
+//spread operatori
+const mixarr = [...arr, ...arr2]
+console.log(mixarr)
