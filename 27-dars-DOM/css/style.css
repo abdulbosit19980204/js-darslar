@@ -1,3 +1,9 @@
+.header_h1 {
+    position: fixed;
+    margin: 500px 530px;
+    color: brown;
+}
+
 .app {
     position: absolute;
     left: 30%;
