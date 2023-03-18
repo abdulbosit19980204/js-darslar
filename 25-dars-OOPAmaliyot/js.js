@@ -42,21 +42,36 @@ const seriesDB = {
         }
     },
     writeGenres: function() {
-        for (i = 0; i < seriesDB.count; i++) {
-            let gener = prompt(i + 1 + " - Yaxshi korgan janiringiz")
-                //let p = prompt(`${i+1} - yaxshi korgan janringiz`, i)
-            if (gener === "" || gener === null) {
-                console.log("Siz noto'g'ri ma'lumot kiritdingiz")
-                i--;
-            } else {
-                seriesDB.genres[i + 1 + " - janr"] = gener
+        /*
+                for (i = 0; i < seriesDB.count; i++) {
+                    // let gener = prompt(i + 1 + " - Yaxshi korgan janiringiz")
+                    let gener = prompt(`${i+1} - yaxshi korgan janringiz`, "")
+                    if (gener === "" || gener === null) {
+                        console.log("Siz noto'g'ri ma'lumot kiritdingiz")
+                        i--
+                    } else {
+                        seriesDB.genres[i] = gener
 
-            }
-            // console.log(p)
+                    }
+                    // console.log(p)
+                }
+        */
+
+
+        let geners = prompt("Yaxshi korgan janiringizni vergul yordamida yozing").toLocaleLowerCase()
+        if (geners === "" || geners === null) {
+            console.log("Siz noto'g'ri ma'lumot kiritdingiz")
+            i--
+        } else {
+            seriesDB.genres = geners.split(', ')
+            seriesDB.genres.sort()
+
         }
+
         seriesDB.genres.forEach((item, idx) => {
-            console.log(`Yaxshi korgan janringiz ${idx+1} - nomi ${item}`)
+            console.log(`Yaxshi ko'rgan janringiz ${idx + 1} - nomi ${item}`)
         })
+
     },
     showDb: function() {
         if (!seriesDB.private) {
