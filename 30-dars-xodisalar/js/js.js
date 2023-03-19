@@ -5,9 +5,12 @@ let btns = document.querySelector('#btn'),
     dlt = document.querySelector('#delete'),
     lnk = document.querySelector('#alink'),
     appn = document.querySelector('#appendN'),
-    evbtn = document.querySelector('#eventBtn')
-    // function hello() {
-    //     alert(prompt("Ismingizni kiriting") + " welcome")
+    evbtn = document.querySelector('#eventBtn'),
+    overlay = document.querySelector('.overlay'),
+    link = document.querySelector('a')
+
+// function hello() {
+//     alert(prompt("Ismingizni kiriting") + " welcome")
 
 // }
 
@@ -74,3 +77,16 @@ let addBtn = (evnt) => {
 }
 
 appn.addEventListener('click', addBtn)
+
+// child div ni bosganda mother divga ham tasir qiladi
+const cb = (e) => {
+    console.log(e.currentTarget)
+}
+evbtn.addEventListener('click', cb)
+overlay.addEventListener('click', cb)
+
+// broserni defaultini o'zgartrishni korib otamiz
+link.addEventListener('click', (event) => {
+    event.preventDefault()
+    alert('Qabosyapsan bratishka koz bormi')
+})
