@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let promoAdv = document.querySelectorAll('.promo__adv img'),
         promoGenre = document.querySelector('.promo__genre'),
         promoBg = document.querySelector('.promo__bg'),
-        promoInteractiveList = document.querySelector('.promo__interactive-list'),
+        seriesList = document.querySelector('.promo__interactive-list'),
         btn = document.querySelector('button'),
         check = document.querySelectorAll('input'),
         addForm = document.querySelector('form.add'),
@@ -25,18 +25,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     addForm.addEventListener('submit', (event) => {
         event.preventDefault()
-        const newSeries = inputVal.value
-        const accept = checkbox.checked
-        console.log("newSeries = ", newSeries);
-        console.log("accept = ", accept);
-        if (newSeries != "") {
+
+        let newSeries = inputVal.value
+        const favourite = checkbox.checked
+
+        // console.log("newSeries = ", newSeries);
+        // console.log("accept = ", accept);
+        //  sortArr(seriesDB.series);
+
+
+
+        if (newSeries) {
+            if (newSeries.length > 18) {
+                newSeries = `${newSeries.substring(0, 18)}...`
+            }
+            if (favourite) {
+                console.log('Sevimli serial qo’shilidi')
+            }
+
             seriesDB.series.push(newSeries)
-            seriesDB.series.sort()
             console.log(seriesDB);
 
-            addListSeries(seriesDB.series, promoInteractiveList)
+            sortArr(seriesDB.series);
+            addListSeries(seriesDB.series, seriesList)
         }
-
+        event.target.reset()
 
     })
 
@@ -49,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     function addListSeries(series, parent) {
-        parent.innerHTML = ""
+        parent.innerHTML = ''
+        sortArr(series)
 
         series.forEach((item, idx) => {
             parent.innerHTML += `
@@ -58,6 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
             </li>
             `
         })
+
+        document.querySelectorAll('.delete').forEach((trash, idx) => {
+            trash.addEventListener('click', () => {
+                trash.parentElement.remove()
+                seriesDB.series.splice(idx, 1)
+                addListSeries(seriesDB.series, seriesList)
+            })
+        })
+
     }
 
     function deleteAd(arr) {
@@ -81,10 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.backgroundColor = 'green'
         }
     }
-    const sortArr = (arr) => {
+    let sortArr = (arr) => {
         arr.sort()
     }
-
+    sortArr(seriesDB.series);
     deleteAd(promoAdv)
     btncheck()
+    addListSeries(seriesDB.series, seriesList)
+
+
 })
