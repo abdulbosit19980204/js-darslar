@@ -1,0 +1,30 @@
+.btn-class-list {
+    width: 100px;
+    background-color: rgb(37, 184, 26);
+    border-radius: 3px;
+    /* border: 1px solid rgb(9, 67, 32); */
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+    font-style: initial;
+    text-transform: uppercase;
+    color: rgb(28, 28, 29);
+    box-shadow: 2px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-class-list:hover {
+    background-color: rgb(25, 135, 12);
+    color: white;
+    width: 120px;
+    height: 55px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.active {
+    background-color: rgb(25, 135, 12);
+    color: white;
+    width: 120px;
+    height: 55px;
+}
