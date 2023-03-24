@@ -1,4 +1,13 @@
+.mother-div {
+    height: 150px;
+    background-color: rgb(149, 255, 153);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .btn-class-list {
+    margin: 5px;
     width: 100px;
     background-color: rgb(37, 184, 26);
     border-radius: 3px;
