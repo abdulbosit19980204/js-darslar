@@ -1,7 +1,7 @@
 .main {
-    width: 500px;
+    width: 800px;
     margin: 0 auto;
-    /* margin-left: 0; */
+    /* margin-left: 150px; */
     display: flex;
 }
 
@@ -20,18 +20,56 @@
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
 
+.btn:hover {
+    color: white;
+}
+
 .btn-pink {
     border-bottom: 3px solid #f51f9c;
+}
+
+.btn-pink:hover {
+    background-color: #f51f9c;
 }
 
 .btn-blue {
     border-bottom: 3px solid #2db6fa;
 }
 
-.btn-green {}
+.btn-blue:hover {
+    background-color: #2db6fa;
+}
+
+.btn-green {
+    border-bottom: 3px solid #08da4e;
+}
+
+.btn-green:hover {
+    background-color: #08da4e;
+}
 
 .btn-red {
     border-bottom: 3px solid #e9222c;
+}
+
+.btn-red:hover {
+    background-color: #e9222c;
+}
+
+.btn-orange {
+    border-bottom: 3px solid #f68c09;
+}
+
+.btn-orange:hover {
+    background-color: #f68c09;
+}
+
+.btn-purple {
+    border-bottom: 3px solid #b50edf;
+}
+
+.btn-purple:hover {
+    background-color: #b50edf;
 }
 
 
@@ -46,6 +84,7 @@
     text-align: center;
     transition: 0.3s;
     border-radius: 5px;
+    width: 100%;
 }
 
 .service-box .icon {
