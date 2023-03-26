@@ -62,11 +62,14 @@ window.addEventListener('DOMContentLoaded', () => {
         slides = document.querySelectorAll('.offer__slide'),
         i = Number(showCurent.textContent) - 1
 
+    // bu yerda slide lar sonini topib olamiz
     console.log(slides.length);
     maxSlide = slides.length
     showTotal.textContent = "0" + maxSlide
 
+    // next buttondi ishga tushuramiz
     nextBtn.addEventListener('click', () => {
+        // agar i yimiz sliderlar sonidan ortiq bolmasa i di bir ga oshiradi
         if (i < maxSlide) {
             ++i
             showCurent.textContent = "0" + i
@@ -80,25 +83,27 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
 
-
+    // prev buttonini ishga tushuramiz
     prevBtn.addEventListener('click', () => {
-        if (i > 0) {
-            --i
-            showCurent.textContent = "0" + (i + 1)
-            console.log(showCurent);
-            hideOfferSlider()
-            showOfferSlider(i)
-        } else {
-            i = Number(showTotal.textContent)
-        }
-    })
-
+            // i yimiz ning qiymati 0 dan katta bolsa 
+            if (i > 0) {
+                --i
+                showCurent.textContent = "0" + (i + 1)
+                console.log(showCurent);
+                hideOfferSlider()
+                showOfferSlider(i)
+            } else {
+                // agar shart bajarilmay qolsa i di qiymatini yana qaytada maxsimal qiymatga qaytaradi
+                i = Number(showTotal.textContent)
+            }
+        })
+        // show funksiyamiz i boyicha slidelar ni korsatib beradi va bundan hide classini ochirib yuboradi Js ES6 dan boshlab quydagicha default qiymat berish mumkin. i=3
     function showOfferSlider(i = 3) {
         slides[i].classList.add('show', 'fade')
         slides[i].classList.remove('hide')
 
     }
-
+    // hide esa yuqoridagi funkisyamizni teskaris yani i dan qolgan barcha elemtlarga hide classini qoshib beradi 
     function hideOfferSlider() {
         slides.forEach(item => {
             item.classList.add('hide', 'fade')
@@ -107,6 +112,7 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    // dastlab ki holatda barchasini o'chirib faqat default berilgan qiymatni chaqirib qoyamiz bizni default i = 3 funksiyada korsatib otganmiz
     hideOfferSlider()
     showOfferSlider()
 
