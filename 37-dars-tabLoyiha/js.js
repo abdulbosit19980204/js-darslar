@@ -5,7 +5,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function hideServiceBox() {
         serviceBox.forEach(item => {
-            item.style.display = 'none'
+            // item.style.display = 'none'
+            item.classList.add('hide')
+            item.classList.remove('show', 'fade')
         })
         btns.forEach((item) => {
             item.classList.remove('active')
@@ -13,7 +15,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function showServiceBox(i = 0) {
-        serviceBox[i].style.display = 'block'
+        // serviceBox[i].style.display = 'block'
+        serviceBox[i].classList.add('show', 'fade')
+        serviceBox[i].classList.remove('hide')
         btns[i].classList.add('active')
     }
 
