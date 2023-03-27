@@ -58,7 +58,7 @@ const btn = document.querySelector('#btn'),
 
 
 function myAnimation() {
-    let timerId = setInterval(frame, 7),
+    let timerId = setInterval(frame, 1),
         i = 0,
         pos = 0
 
@@ -79,7 +79,7 @@ function myAnimation() {
 
 
 function rotateBack() {
-    let timerId = setInterval(frame, 7),
+    let timerId = setInterval(frame, 5),
         pos = 800
     const car = document.querySelector('.car')
     console.log(Number(car.style.left));
