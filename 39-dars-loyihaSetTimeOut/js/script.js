@@ -5,7 +5,19 @@ window.addEventListener('DOMContentLoaded', () => {
     let tabsContent = document.querySelectorAll('.tabcontent'),
         tabsParent = document.querySelector('.tabheader__items'),
         tabs = document.querySelectorAll('.tabheader__item'),
-        tabText = document.querySelectorAll('.tabcontent__descr')
+        tabText = document.querySelectorAll('.tabcontent__descr'),
+        loader = document.querySelector('.loader')
+
+    // Loader
+
+    setTimeout(() => {
+        // loader.classList.remove('loader')
+        loader.style.opacity = '0'
+        setTimeout(() => {
+            // loader.style.display = 'none'
+            loader.classList.remove('loader')
+        }, 500);
+    }, 1000);
 
     // TabDagi textni kesib beradi ortiqchasini chiqarib tashlaydi
     tabText.forEach((item) => {
