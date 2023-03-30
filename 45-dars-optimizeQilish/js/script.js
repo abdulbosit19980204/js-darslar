@@ -194,11 +194,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Modul 
 
-    const modalTrigger = document.querySelector('[data-modal]'),
+    const modalTrigger = document.querySelectorAll('[data-modal]'),
         modal = document.querySelector('.modal'),
         modalCloseBtn = document.querySelector('[data-close]')
 
-    modalTrigger.addEventListener('click', openModal)
+
+    modalTrigger.forEach((item) => {
+        item.addEventListener('click', openModal)
+    })
+
+    // modalTrigger.addEventListener('click', openModal)
 
     modalCloseBtn.addEventListener('click', closeModal)
 
@@ -215,6 +220,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     const modalTimerId = setTimeout(openModal, 3000)
+
 
     function openModal() {
         // modal.classList.toggle('show')
@@ -234,5 +240,12 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = ''
     }
 
-
+    function showModalByScroll() {
+        let fullScrolHeight = window.pageYOffset + document.documentElement.clientHeight
+        if (fullScrolHeight >= document.documentElement.scrollHeight) {
+            openModal()
+            window.removeEventListener('scroll', showModalByScroll)
+        }
+    }
+    window.addEventListener('scroll', showModalByScroll)
 })
