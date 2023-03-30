@@ -217,10 +217,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const modalTimerId = setTimeout(openModal, 3000)
 
     function openModal() {
+        // modal.classList.toggle('show')
+
         modal.classList.add('show')
         modal.classList.remove('hide')
-
-        // modal.classList.toggle('show')
 
         document.body.style.overflow = 'hidden'
         clearInterval(modalTimerId)
