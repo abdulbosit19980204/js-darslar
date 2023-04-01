@@ -6,19 +6,24 @@ let slider = document.querySelector('#slider'),
     sliderCounter = document.querySelector('h2')
 
 slider.max = scroll.scrollHeight
-
+p.textContent = ""
 scroll.addEventListener('scroll', () => {
-    // slider.max = scroll.sliderHeight
     console.log("max = ", slider.max)
     slider.value = scroll.scrollTop
-    console.log("slider = ", slider.value);
-    sliderCounter.textContent = (" *** " + String(slider.value) + " *** ")
+    console.log("slider scroll = ", slider.value);
+    sliderCounter.textContent = String(slider.value)
+    p.textContent = (p.textContent + " " + slider.value)
+    console.log("p = ", p.textContent);
+    slider.max = scroll.scrollHeight
 })
 
 slider.addEventListener('input', () => {
-    console.log("max = ", slider.max)
+    // console.log("max = ", slider.max)
     scroll.scrollTop = slider.value
-    console.log("slider = ", slider.value);
-    sliderCounter.textContent = (" *** " + String(slider.value) + " *** ")
-
+    console.log("slider range = ", slider.value);
+    sliderCounter.textContent = String(slider.value)
+    sliderCounter.textContent = String(slider.value)
+    p.textContent = (p.textContent + " " + slider.value)
+    console.log("p = ", p.textContent);
+    slider.max = scroll.scrollHeight
 })

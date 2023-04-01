@@ -51,3 +51,21 @@ Mers
 My car is Mers and it is color is White. It is Max speed 500 km/h
 
 */
+
+
+//Bind - (uzb Bog'lamoq ) bilan tanishib chiqamiz
+
+function calc(number) {
+    return this * number
+}
+let n = document.querySelector('h2'),
+    p = document.querySelector('p')
+
+console.log("n = ", Number(n.textContent))
+
+slider.addEventListener('input', () => {
+
+    const multipleN = calc.bind(Number(n.textContent))
+    console.log("Multiple 3 => ", multipleN(3));
+
+})
