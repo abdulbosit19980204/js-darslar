@@ -132,7 +132,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Timer 
 
-    const deadline = '2023-03-29 07:56:00'
+    const deadline = '2023-12-29 07:56:00'
 
 
 
@@ -234,5 +234,67 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = ''
     }
 
+
+
+    //Class 
+    class MenuCard {
+        constructor(src, alt, title, descr, price, parentSelector) {
+            this.src = src
+            this.alt = alt
+            this.title = title
+            this.descr = descr
+            this.price = price
+            this.parent = document.querySelector(parentSelector)
+            this.tarnsfer = 11000
+            this.changeToUZS()
+        }
+        changeToUZS() {
+            this.price = this.price * this.tarnsfer
+        }
+        render() {
+            const element = document.createElement('div')
+            element.innerHTML = ` 
+            <div class="menu__item">
+                <img src=${this.src} alt=${this.alt} />
+                <h3 class="menu__item-subtitle">${this.title}</h3>
+            <div class="menu__item-descr">
+               ${this.descr}
+            </div>
+            <div class="menu__item-divider"></div>
+            <div class="menu__item-price">
+                <div class="menu__item-cost">Price:</div>
+                <div class="menu__item-total"><span>${this.price}</span> UZS/month</div>
+            </div>
+        </div>`
+
+            this.parent.append(element)
+        }
+
+    }
+
+    new MenuCard(
+        'img/tabs/1.png',
+        'vegy',
+        'Plan "Usual"',
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.',
+        2,
+        ".menu .container"
+    ).render()
+    new MenuCard(
+        'img/tabs/2.jpg',
+        'elite',
+        'Plan “Premium”',
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.',
+        3,
+        ".menu .container"
+    ).render()
+    new MenuCard(
+        'img/tabs/3.jpg',
+        'post',
+        'Plan "VIP"',
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.',
+        5,
+        ".menu .container"
+    ).render()
 
 })
