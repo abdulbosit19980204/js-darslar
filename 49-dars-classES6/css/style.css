@@ -10,4 +10,14 @@ body {
 code {
     width: 500px;
     align-items: center;
+    font-size: 18px;
+}
+
+li:hover {
+    padding-bottom: 5px;
+    color: yellow;
+}
+
+strong {
+    color: red;
 }
