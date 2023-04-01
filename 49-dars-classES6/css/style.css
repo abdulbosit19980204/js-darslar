@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* align-items: center; */
+    padding-left: 50px;
+}
+
+code {
+    width: 500px;
+    align-items: center;
+}
