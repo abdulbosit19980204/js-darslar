@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+ol {
+    text-align: justify;
+}
+
+li:hover {
+    color: yellow;
+    padding-bottom: 5px;
+    font-size: 16px;
+}

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 30px;
+    outline: none;
+    width: 300px;
+    background-color: rgb(218, 233, 210);
+    border: none;
+    cursor: pointer;
+    border-radius: 0 10px 0 10px;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid rgba(120, 160, 140, 0.867);
+}
+
+button:hover {
+    background-color: rgb(87, 215, 19);
+    border-radius: 10px 0 10px 0;
+    border-bottom: 4px solid rgba(17, 147, 82, 0.867);
+}
+
+.overlay {
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(20, 203, 69);
+}

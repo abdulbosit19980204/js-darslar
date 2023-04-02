@@ -1,0 +1,21 @@
+body:fullscreen body:-ms-fullscreen,
+body:-webkit-full-screen,
+body:-moz-full-screen {
+    overflow: scroll !important;
+}
+
+body:fullscreen {
+    overflow: scroll !important;
+}
+
+body:-ms-fullscreen {
+    overflow: scroll !important;
+}
+
+body:-webkit-full-screen {
+    overflow: scroll !important;
+}
+
+body:-moz-full-screen {
+    overflow: scroll !important;
+}
