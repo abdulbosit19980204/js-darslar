@@ -11,4 +11,5 @@ ol {
 li:hover {
     color: yellow;
     padding-bottom: 5px;
+    font-size: 16px;
 }
