@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+ol {
+    text-align: justify;
+}
+
+li:hover {
+    color: yellow;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.pre {
+    width: 900px;
+    border: 2px solid green;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.comment {
+    color: rgb(137, 135, 135);
+}

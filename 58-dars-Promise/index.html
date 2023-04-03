@@ -6,13 +6,78 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Promise</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/prism (3).css'>
+
 </head>
 
 <body>
-    <h1>Promise</h1>
+    <code>
+        <h1>Promise</h1>
+        <ol>
+            <li><strong><u>Promise() </u></strong> - promise e'lon qilish uchun kalit soz</li>
+            <li><strong><u>resolve </u></strong> - Promise dagi qiymat true bolganda yani ish to'g'ri bajarilganda e'lon qilinadi</li>
+            <li><strong><u>reject </u></strong>- Promise dan xato qiymat qaytarilganda ishlatiladi</li>
+            <li><strong><u>finally </u></strong>- xar ikkala xolda ham bajariladi</li>
+        </ol>
+        <h3>Bularni ishga tushurish uchun ayrim kalit so'zlar kerak boladi</h3>
+        <ol>
+            <li><strong><u>.then </u></strong>- natija resolve bolganda bajariladigan vazifalrni berish uchun ishlatiladi</li>
+            <li><strong><u>.catch </u></strong>- qiymt reject bolganda keyingi bajariladigan vazifani shu key word bilan beramiz</li>
+            <li><strong><u>.finally </u></strong>- yuqorida korsatib o'tilganiday xar ikkala shart bajarilsa ham qandaydir vazifa bajarilishi kerkaligini korsatish uchun ishlatiladi </li>
+        </ol>
+
+        <pre class="language- JavaScript pre dark">
+console.log('Request data...')
+setTimeout(() => {
+    console.log('Processing data...');
+    const product = {
+        name: 'car',
+        color: 'black',
+    }
+    setTimeout(() => {
+        product.status = 'order'
+        console.log(product);
+    }, 2000);
+}, 2000);
+
+<div class="comment">// Endi yuqoridagi kodimizni Promise bilan korib chiqamiz</div> 
+console.log('Request data...')
+const req = new Promise(resolve => {
+    setTimeout(() => {
+        const product = {
+            name: 'car',
+            color: 'black'
+        }
+        console.log('Processing data...');
+        resolve(product)
+    }, 2000);
+})
+<div class="comment">
+    //Bu birinchi xolatdagi Promise
+    // req.then((data) => console.log(data)).finally(() => console.log('Fetching data end'))
+    
+    //Promise ichiga yangi Promise yozishimiz mumkin
+</div>
+req.then((data) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                data.status = 'ordered'
+                console.log('Get data...');
+                // resolve(data)
+                reject()
+            }, 2000);
+        })
+    })
+    .then(result => console.log(result))
+    .catch(() => console.log('the requested information is not available'))
+    .finally(() => console.log('Fetching end'))
+        </pre>
+    </code>
+
+
     <script src="js/js.js"></script>
+    <script src="js/prism (3).js"></script>
 </body>
 
 </html>
