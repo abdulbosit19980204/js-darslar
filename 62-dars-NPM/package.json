@@ -1,0 +1,19 @@
+{
+    "name": "62-dars-npm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Abdulbosit Tuychiev",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^5.2.3",
+        "brcypt": "^1.0.1"
+    },
+    "devDependencies": {
+        "cors": "^2.8.5",
+        "jquery": "^3.6.4"
+    }
+}
