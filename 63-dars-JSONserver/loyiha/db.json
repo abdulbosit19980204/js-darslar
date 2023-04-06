@@ -1,0 +1,25 @@
+{
+    "menu": [{
+            "img": "img/tabs/1.png",
+            "altimg": "vegy",
+            "title": "Plan 'Usual'",
+            "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+            "price": 2
+        },
+        {
+            "img": "img/tabs/2.png",
+            "altimg": "elite",
+            "title": "Plan 'Premium'",
+            "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+            "price": 3
+        },
+        {
+            "img": "img/tabs/3.png",
+            "altimg": "post",
+            "title": "Plan 'Vip'",
+            "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+            "price": 5
+        }
+    ],
+    "request": []
+}
