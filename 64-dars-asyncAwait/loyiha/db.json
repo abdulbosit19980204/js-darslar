@@ -1,0 +1,62 @@
+{
+  "menu": [
+    {
+      "img": "img/tabs/1.png",
+      "altimg": "vegy",
+      "title": "Plan 'Usual'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 2
+    },
+    {
+      "img": "img/tabs/2.png",
+      "altimg": "elite",
+      "title": "Plan 'Premium'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 3
+    },
+    {
+      "img": "img/tabs/3.png",
+      "altimg": "post",
+      "title": "Plan 'Vip'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 5
+    }
+  ],
+  "request": [
+    {
+      "name": "jnjn",
+      "phone": "jn",
+      "id": 1
+    },
+    {
+      "name": "jnj",
+      "phone": "jnj",
+      "id": 2
+    },
+    {
+      "name": "hhbsdbh",
+      "phone": "hjbh",
+      "id": 3
+    },
+    {
+      "name": "Abdulbosit",
+      "phone": "Tuychiev",
+      "id": 4
+    },
+    {
+      "name": "ac",
+      "phone": "123",
+      "id": 5
+    },
+    {
+      "name": "dd",
+      "phone": "11",
+      "id": 6
+    },
+    {
+      "name": "Abdulbosit",
+      "phone": "+998999999999",
+      "id": 7
+    }
+  ]
+}
