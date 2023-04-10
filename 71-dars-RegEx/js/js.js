@@ -17,3 +17,17 @@ const password = prompt('password', '')
 console.log(password.replace(/./g, '*')); // ********* shu korinishda natija qaytaradi
 // maxsus special character lar ni topish uchun \ dan foydalaniladi
 console.log(password.replace(/\|/g, '*')); // bu yerda | belgini topish kerak boladi
+
+// test method ni sinab koramiz test method bizga boolean qiymat qaytaradi
+const RegExpTest = /abd/gi
+console.log(RegExpTest.test(name)); // agar user kritgan name da abd degan jumla bolsa true qiymat qaytaradi bo'lmasa false
+if (RegExpTest.test(name)) { console.log("Welcome ", name) } else { console.log(name, " is not admin") }
+
+// additional expressions
+
+// \d - digit   || \D - not a digit (number)
+// \w - word    || \W - not a word              >>> bular topilayatgan ma'lumot turlarini aniqlaydi
+// \s - space   || \S - not a space
+
+const RegExpAdd = /\d/gi //agar user abdulbosit1998 degan malumot kiritsa 
+console.log(name.match(RegExpAdd)); // ['1', '9', '9', '8'] shu korinishda javob qaytaradi
