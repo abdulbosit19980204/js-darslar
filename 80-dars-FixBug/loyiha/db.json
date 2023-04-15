@@ -1,0 +1,139 @@
+{
+  "menu": [
+    {
+      "img": "img/tabs/1.png",
+      "altimg": "vegy",
+      "title": "Plan 'Usual'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 2
+    },
+    {
+      "img": "img/tabs/2.jpg",
+      "altimg": "elite",
+      "title": "Plan 'Premium'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 3
+    },
+    {
+      "img": "img/tabs/3.jpg",
+      "altimg": "post",
+      "title": "Plan 'Vip'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 5
+    }
+  ],
+  "slider": [
+    {
+      "src": "img/slider/slider1.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam."
+    },
+    {
+      "src": "img/slider/slider2.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam esse cum distinctio laboriosam non hic. Possimus est ipsam unde, nulla voluptas, suscipit vitae eligendi velit laboriosam eveniet quae eaque? Perferendis at ullam accusantium numquam ratione, cum repellendus labore ea tempora. Deserunt, unde optio qui at vero nisi non ipsum cumque numquam minima minus tempora nesciunt aspernatur omnis consequuntur, itaque adipisci et explicabo! Sint repudiandae dolores, nobis consectetur quasi eos. Accusantium alias quisquam qui id eligendi nisi error. Quo perferendis sapiente provident dolores sequi, fugit dignissimos facilis eaque laudantium minima nisi enim maxime! A atque labore accusantium, dolore non deserunt sunt quos incidunt, hic iste quidem animi? Culpa repellat reprehenderit minus qui quam reiciendis, maiores velit totam earum iste, modi temporibus vitae hic et esse aspernatur perferendis ipsa porro ad consectetur laborum. Ratione perferendis minima ad nostrum earum quos vero ab, amet est incidunt."
+    },
+    {
+      "src": "img/slider/slider3.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam."
+    },
+    {
+      "src": "img/slider/slider4.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam."
+    },
+    {
+      "src": "img/slider/slider5.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam esse cum distinctio laboriosam non hic. Possimus est ipsam unde, nulla voluptas, suscipit vitae eligendi velit laboriosam eveniet quae eaque? Perferendis at ullam accusantium numquam ratione, cum repellendus labore ea tempora. Deserunt, unde optio qui at vero nisi non ipsum cumque numquam minima minus tempora nesciunt aspernatur omnis consequuntur, itaque adipisci et explicabo! Sint repudiandae dolores, nobis consectetur quasi eos. Accusantium alias quisquam qui id eligendi nisi error. Quo perferendis sapiente provident dolores sequi, fugit dignissimos facilis eaque laudantium minima nisi enim maxime! A atque labore accusantium, dolore non deserunt sunt quos incidunt, hic iste quidem animi? Culpa repellat reprehenderit minus qui quam reiciendis, maiores velit totam earum iste, modi temporibus vitae hic et esse aspernatur perferendis ipsa porro ad consectetur laborum. Ratione perferendis minima ad nostrum earum quos vero ab, amet est incidunt."
+    }
+  ],
+  "request": [
+    {
+      "name": "jnjn",
+      "phone": "jn",
+      "id": 1
+    },
+    {
+      "name": "jnj",
+      "phone": "jnj",
+      "id": 2
+    },
+    {
+      "name": "hhbsdbh",
+      "phone": "hjbh",
+      "id": 3
+    },
+    {
+      "name": "Abdulbosit",
+      "phone": "Tuychiev",
+      "id": 4
+    },
+    {
+      "name": "ac",
+      "phone": "123",
+      "id": 5
+    },
+    {
+      "name": "dd",
+      "phone": "11",
+      "id": 6
+    },
+    {
+      "name": "Abdulbosit",
+      "phone": "+998999999999",
+      "id": 7
+    },
+    {
+      "name": "ushu",
+      "phone": "uhuh",
+      "id": 8
+    },
+    {
+      "name": "jnj",
+      "phone": "jkn",
+      "id": 9
+    },
+    {
+      "name": "mnb",
+      "phone": "kjk",
+      "id": 10
+    },
+    {
+      "name": "jnjn",
+      "phone": "jkn",
+      "id": 11
+    },
+    {
+      "name": "njjnjn",
+      "phone": "jnjn",
+      "id": 12
+    },
+    {
+      "name": "njj",
+      "phone": "njkn",
+      "id": 13
+    },
+    {
+      "name": "djnj",
+      "phone": "jnj",
+      "id": 14
+    },
+    {
+      "name": "sdjnjn",
+      "phone": "jnj",
+      "id": 15
+    },
+    {
+      "name": "dfjn",
+      "phone": "njn",
+      "id": 16
+    },
+    {
+      "name": "fejn",
+      "phone": "jn",
+      "id": 17
+    }
+  ]
+}
