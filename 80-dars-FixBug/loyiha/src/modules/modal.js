@@ -1,4 +1,4 @@
-function openModal(modalSelector) {
+function openModal(modalSelector, modalTimerId) {
     // modal.classList.toggle('show')
 
     const modal = document.querySelector(modalSelector)
@@ -7,7 +7,9 @@ function openModal(modalSelector) {
     modal.classList.remove('hide')
 
     document.body.style.overflow = 'hidden'
-    clearInterval(modalTimerId)
+    if (modalTimerId) {
+        clearInterval(modalTimerId)
+    }
 }
 
 function closeModal(modalSelector) {
@@ -20,37 +22,49 @@ function closeModal(modalSelector) {
 }
 
 
-function modal(triggerSelector, modalSelector) {
+function modal(triggerSelector, modalSelector, modalTimerId) {
 
 
     /**########################## START ################################# */
     /**########################## MODUL ################################## */
 
-    const modalTrigger = document.querySelector(triggerSelector),
+    const modalTrigger = document.querySelectorAll(triggerSelector),
         modal = document.querySelector(modalSelector)
         // modalCloseBtn = document.querySelector('[data-close]')
 
-    modalTrigger.addEventListener('click', () => { openModal(modalSelector) })
+    modalTrigger.forEach(item => {
+
+        item.addEventListener('click', () => openModal(modalSelector, modalTimerId))
+    })
 
     // modalCloseBtn.addEventListener('click', closeModal)
 
     modal.addEventListener('click', (e) => {
         if (e.target == modal || e.target.getAttribute('data-close') == '') {
-            closeModal()
+            closeModal(modalSelector)
         }
     })
 
     document.addEventListener('keydown', (e) => {
         if (e.code === 'Escape' && modal.classList.contains('show')) {
-            closeModal()
+            closeModal(modalSelector)
         }
     })
 
-    const modalTimerId = setTimeout(openModal, 3000)
+    // const modalTimerId = setTimeout(openModal, 3000)
 
+    function showModalByScroll() {
+        if (
+            window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight
+        ) {
+            openModal(modalSelector, modalTimerId)
+            window.removeEventListener('scroll', showModalByScroll)
+        }
+    }
 
-    /**########################## TAMAM ################################# */
-    /**########################## MODUL ################################## */
+    window.addEventListener('scroll', showModalByScroll)
+        /**########################## TAMAM ################################# */
+        /**########################## MODUL ################################## */
 }
 
 export default modal

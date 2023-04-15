@@ -260,7 +260,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "openModal": () => (/* binding */ openModal)
 /* harmony export */ });
-function openModal(modalSelector) {
+function openModal(modalSelector, modalTimerId) {
     // modal.classList.toggle('show')
 
     const modal = document.querySelector(modalSelector)
@@ -269,7 +269,9 @@ function openModal(modalSelector) {
     modal.classList.remove('hide')
 
     document.body.style.overflow = 'hidden'
-    clearInterval(modalTimerId)
+    if (modalTimerId) {
+        clearInterval(modalTimerId)
+    }
 }
 
 function closeModal(modalSelector) {
@@ -282,37 +284,49 @@ function closeModal(modalSelector) {
 }
 
 
-function modal(triggerSelector, modalSelector) {
+function modal(triggerSelector, modalSelector, modalTimerId) {
 
 
     /**########################## START ################################# */
     /**########################## MODUL ################################## */
 
-    const modalTrigger = document.querySelector(triggerSelector),
+    const modalTrigger = document.querySelectorAll(triggerSelector),
         modal = document.querySelector(modalSelector)
         // modalCloseBtn = document.querySelector('[data-close]')
 
-    modalTrigger.addEventListener('click', () => { openModal(modalSelector) })
+    modalTrigger.forEach(item => {
+
+        item.addEventListener('click', () => openModal(modalSelector, modalTimerId))
+    })
 
     // modalCloseBtn.addEventListener('click', closeModal)
 
     modal.addEventListener('click', (e) => {
         if (e.target == modal || e.target.getAttribute('data-close') == '') {
-            closeModal()
+            closeModal(modalSelector)
         }
     })
 
     document.addEventListener('keydown', (e) => {
         if (e.code === 'Escape' && modal.classList.contains('show')) {
-            closeModal()
+            closeModal(modalSelector)
         }
     })
 
-    const modalTimerId = setTimeout(openModal, 3000)
+    // const modalTimerId = setTimeout(openModal, 3000)
 
+    function showModalByScroll() {
+        if (
+            window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight
+        ) {
+            openModal(modalSelector, modalTimerId)
+            window.removeEventListener('scroll', showModalByScroll)
+        }
+    }
 
-    /**########################## TAMAM ################################# */
-    /**########################## MODUL ################################## */
+    window.addEventListener('scroll', showModalByScroll)
+        /**########################## TAMAM ################################# */
+        /**########################## MODUL ################################## */
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modal);
@@ -744,13 +758,16 @@ __webpack_require__.r(__webpack_exports__);
     
     
     
+    
 
     window.addEventListener('DOMContentLoaded', () => {
-        (0,_modules_slider__WEBPACK_IMPORTED_MODULE_4__["default"])()
+        const modalTimerId = setTimeout(() => (0,_modules_modal__WEBPACK_IMPORTED_MODULE_3__.openModal)('.modal', modalTimerId), 3000)
+
+        ;(0,_modules_slider__WEBPACK_IMPORTED_MODULE_4__["default"])()
         ;(0,_modules_class__WEBPACK_IMPORTED_MODULE_0__["default"])()
         ;(0,_modules_form__WEBPACK_IMPORTED_MODULE_1__["default"])()
         ;(0,_modules_loader__WEBPACK_IMPORTED_MODULE_2__["default"])()
-        ;(0,_modules_modal__WEBPACK_IMPORTED_MODULE_3__["default"])('[data-modal]', '.modal')
+        ;(0,_modules_modal__WEBPACK_IMPORTED_MODULE_3__["default"])('[data-modal]', '.modal', modalTimerId)
         ;(0,_modules_tab__WEBPACK_IMPORTED_MODULE_5__["default"])()
         ;(0,_modules_timer__WEBPACK_IMPORTED_MODULE_6__["default"])()
 

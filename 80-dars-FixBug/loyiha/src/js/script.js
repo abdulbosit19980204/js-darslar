@@ -5,13 +5,16 @@
     import slider from '../modules/slider'
     import tab from '../modules/tab'
     import timer from '../modules/timer'
+    import { openModal } from '../modules/modal'
 
     window.addEventListener('DOMContentLoaded', () => {
+        const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 3000)
+
         slider()
         clas()
         form()
         loader()
-        modal('[data-modal]', '.modal')
+        modal('[data-modal]', '.modal', modalTimerId)
         tab()
         timer()
 
