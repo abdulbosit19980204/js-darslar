@@ -1,0 +1,199 @@
+{
+  "menu": [
+    {
+      "img": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/365870718.jpg?k=08ff83f9627b44735ca6c512185ba9e8692f0d926bc5acf8e21698d13dd7fe97&o=&hp=1",
+      "altimg": "vegy",
+      "title": "Plan 'Usual'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 20
+    },
+    {
+      "img": "https://silk-road-by-minyoun-samarkand.booked.net/data/Photos/OriginalPhoto/12990/1299026/1299026734/Silk-Road-By-Minyoun-Hotel-Samarkand-Exterior.JPEG",
+      "altimg": "elite",
+      "title": "Plan 'Premium'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 30
+    },
+    {
+      "img": "https://www.silkroad-samarkand.com/upload/iblock/9e1/eb0p3qwl3gdff1ymdh3dkevbfgklghfo.jpg",
+      "altimg": "post",
+      "title": "Plan 'Vip'",
+      "descr": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 50
+    }
+  ],
+  "slider": [
+    {
+      "src": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/01/31/1112/Hyatt-Regency-Tashkent-P046-Exterior-Night-View.jpg/Hyatt-Regency-Tashkent-P046-Exterior-Night-View.16x9.jpg",
+      "alt": "slider1",
+      "desc": " Hyatt Regency Tashkent offers the quintessential location for both business and leisure travelers. Make yourself at home in your spacious guestroom, dine in one of our four restaurants and bars, hold a board meeting or an exclusive event and don’t forget to relax in our pool and spa area. Here, you’ll find that productivity and relaxation are constants during your time in Tashkent."
+    },
+    {
+      "src": "https://uzbek-travel.com/images/uz/Hotels/Tashkent/International_Hotel/pic-97e574281daeba523cb272fa35a6e3fa.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam esse cum distinctio laboriosam non hic. Possimus est ipsam unde, nulla voluptas, suscipit vitae eligendi velit laboriosam eveniet quae eaque? Perferendis at ullam accusantium numquam ratione, cum repellendus labore ea tempora. Deserunt, unde optio qui at vero nisi non ipsum cumque numquam minima minus tempora nesciunt aspernatur omnis consequuntur, itaque adipisci et explicabo! Sint repudiandae dolores, nobis consectetur quasi eos. Accusantium alias quisquam qui id eligendi nisi error. Quo perferendis sapiente provident dolores sequi, fugit dignissimos facilis eaque laudantium minima nisi enim maxime! A atque labore accusantium, dolore non deserunt sunt quos incidunt, hic iste quidem animi? Culpa repellat reprehenderit minus qui quam reiciendis, maiores velit totam earum iste, modi temporibus vitae hic et esse aspernatur perferendis ipsa porro ad consectetur laborum. Ratione perferendis minima ad nostrum earum quos vero ab, amet est incidunt."
+    },
+    {
+      "src": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/45390539.jpg?k=6ee3b960e439f416de265045abcb5b95dcedbf4c2376447e3400a21c12708854&o=",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam."
+    },
+    {
+      "src": "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/42/11/99/the-modern-hotel-in-andijan.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam."
+    },
+    {
+      "src": "https://www.people-travels.com/images/hotels/bukhara/newmoon4.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam esse cum distinctio laboriosam non hic. Possimus est ipsam unde, nulla voluptas, suscipit vitae eligendi velit laboriosam eveniet quae eaque? Perferendis at ullam accusantium numquam ratione, cum repellendus labore ea tempora. Deserunt, unde optio qui at vero nisi non ipsum cumque numquam minima minus tempora nesciunt aspernatur omnis consequuntur, itaque adipisci et explicabo! Sint repudiandae dolores, nobis consectetur quasi eos. Accusantium alias quisquam qui id eligendi nisi error. Quo perferendis sapiente provident dolores sequi, fugit dignissimos facilis eaque laudantium minima nisi enim maxime! A atque labore accusantium, dolore non deserunt sunt quos incidunt, hic iste quidem animi? Culpa repellat reprehenderit minus qui quam reiciendis, maiores velit totam earum iste, modi temporibus vitae hic et esse aspernatur perferendis ipsa porro ad consectetur laborum. Ratione perferendis minima ad nostrum earum quos vero ab, amet est incidunt."
+    },
+    {
+      "src": "https://ftnnews.com/images/stories/other/2021/Silk_Road_Samarkand_in_Uzbekistan.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam esse cum distinctio laboriosam non hic. Possimus est ipsam unde, nulla voluptas, suscipit vitae eligendi velit laboriosam eveniet quae eaque? Perferendis at ullam accusantium numquam ratione, cum repellendus labore ea tempora. Deserunt, unde optio qui at vero nisi non ipsum cumque numquam minima minus tempora nesciunt aspernatur omnis consequuntur, itaque adipisci et explicabo! Sint repudiandae dolores, nobis consectetur quasi eos. Accusantium alias quisquam qui id eligendi nisi error. Quo perferendis sapiente provident dolores sequi, fugit dignissimos facilis eaque laudantium minima nisi enim maxime! A atque labore accusantium, dolore non deserunt sunt quos incidunt, hic iste quidem animi? Culpa repellat reprehenderit minus qui quam reiciendis, maiores velit totam earum iste, modi temporibus vitae hic et esse aspernatur perferendis ipsa porro ad consectetur laborum. Ratione perferendis minima ad nostrum earum quos vero ab, amet est incidunt."
+    },
+    {
+      "src": "https://dolorestravel.com/uploads/images/tour-center-silk-road-samarkand.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam esse cum distinctio laboriosam non hic. Possimus est ipsam unde, nulla voluptas, suscipit vitae eligendi velit laboriosam eveniet quae eaque? Perferendis at ullam accusantium numquam ratione, cum repellendus labore ea tempora. Deserunt, unde optio qui at vero nisi non ipsum cumque numquam minima minus tempora nesciunt aspernatur omnis consequuntur, itaque adipisci et explicabo! Sint repudiandae dolores, nobis consectetur quasi eos. Accusantium alias quisquam qui id eligendi nisi error. Quo perferendis sapiente provident dolores sequi, fugit dignissimos facilis eaque laudantium minima nisi enim maxime! A atque labore accusantium, dolore non deserunt sunt quos incidunt, hic iste quidem animi? Culpa repellat reprehenderit minus qui quam reiciendis, maiores velit totam earum iste, modi temporibus vitae hic et esse aspernatur perferendis ipsa porro ad consectetur laborum. Ratione perferendis minima ad nostrum earum quos vero ab, amet est incidunt."
+    },
+    {
+      "src": "https://heavensportfolio.com/uploads/asia-me/silr04.jpg",
+      "alt": "slider1",
+      "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iure, nam fuga vero eum numquam autem! Pariatur laborum voluptas adipisci debitis, atque ut fugit aperiam minus porro labore consectetur placeat eius aliquam, dicta, maiores ea numquam esse cum distinctio laboriosam non hic. Possimus est ipsam unde, nulla voluptas, suscipit vitae eligendi velit laboriosam eveniet quae eaque? Perferendis at ullam accusantium numquam ratione, cum repellendus labore ea tempora. Deserunt, unde optio qui at vero nisi non ipsum cumque numquam minima minus tempora nesciunt aspernatur omnis consequuntur, itaque adipisci et explicabo! Sint repudiandae dolores, nobis consectetur quasi eos. Accusantium alias quisquam qui id eligendi nisi error. Quo perferendis sapiente provident dolores sequi, fugit dignissimos facilis eaque laudantium minima nisi enim maxime! A atque labore accusantium, dolore non deserunt sunt quos incidunt, hic iste quidem animi? Culpa repellat reprehenderit minus qui quam reiciendis, maiores velit totam earum iste, modi temporibus vitae hic et esse aspernatur perferendis ipsa porro ad consectetur laborum. Ratione perferendis minima ad nostrum earum quos vero ab, amet est incidunt."
+    }
+  ],
+  "request": [
+    {
+      "name": "jnjn",
+      "phone": "jn",
+      "id": 1
+    },
+    {
+      "name": "jnj",
+      "phone": "jnj",
+      "id": 2
+    },
+    {
+      "name": "hhbsdbh",
+      "phone": "hjbh",
+      "id": 3
+    },
+    {
+      "name": "Abdulbosit",
+      "phone": "Tuychiev",
+      "id": 4
+    },
+    {
+      "name": "ac",
+      "phone": "123",
+      "id": 5
+    },
+    {
+      "name": "dd",
+      "phone": "11",
+      "id": 6
+    },
+    {
+      "name": "Abdulbosit",
+      "phone": "+998999999999",
+      "id": 7
+    },
+    {
+      "name": "ushu",
+      "phone": "uhuh",
+      "id": 8
+    },
+    {
+      "name": "jnj",
+      "phone": "jkn",
+      "id": 9
+    },
+    {
+      "name": "mnb",
+      "phone": "kjk",
+      "id": 10
+    },
+    {
+      "name": "jnjn",
+      "phone": "jkn",
+      "id": 11
+    },
+    {
+      "name": "njjnjn",
+      "phone": "jnjn",
+      "id": 12
+    },
+    {
+      "name": "njj",
+      "phone": "njkn",
+      "id": 13
+    },
+    {
+      "name": "djnj",
+      "phone": "jnj",
+      "id": 14
+    },
+    {
+      "name": "sdjnjn",
+      "phone": "jnj",
+      "id": 15
+    },
+    {
+      "name": "dfjn",
+      "phone": "njn",
+      "id": 16
+    },
+    {
+      "name": "fejn",
+      "phone": "jn",
+      "id": 17
+    },
+    {
+      "name": "jnj",
+      "phone": "njn",
+      "id": 18
+    },
+    {
+      "name": "jnsjn",
+      "phone": "n",
+      "id": 19
+    },
+    {
+      "name": "snfjn",
+      "phone": "jnjn",
+      "id": 20
+    },
+    {
+      "name": "njfn",
+      "phone": "jnj",
+      "id": 21
+    },
+    {
+      "name": "dans",
+      "phone": "jn",
+      "id": 22
+    },
+    {
+      "name": "dsnmkm",
+      "phone": "lkm",
+      "id": 23
+    },
+    {
+      "name": "kmkmrk",
+      "phone": "klmkm",
+      "id": 24
+    },
+    {
+      "name": "dnj",
+      "phone": "jnj",
+      "id": 25
+    },
+    {
+      "name": "acsk",
+      "phone": "kn",
+      "id": 26
+    }
+  ]
+}
